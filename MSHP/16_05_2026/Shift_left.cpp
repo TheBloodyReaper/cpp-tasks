@@ -10,7 +10,7 @@ using namespace std;
 
 int main()
 {
-    int n, a[100], s, k;
+    int n, a[100], s, k, temp;
     cin >> n;
     for (int i = 0; i < n; i++)
     {
@@ -18,5 +18,15 @@ int main()
     }
     cin >> s >> k;
     
+    temp = a[s];
+    for (int i = s; i < k; i++)
+    {
+        a[i] = a[i + 1];
+    }
+    a[k] = temp;
 
+    for (int i = 0; i < n; i++)
+    {
+        cout << a[i] << " ";
+    }
 }
