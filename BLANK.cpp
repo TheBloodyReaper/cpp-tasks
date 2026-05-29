@@ -6,6 +6,10 @@
 #include <iostream>
 #include <iomanip>
 #include <string>
+#include <cctype>
+#include <cmath>
+#include <vector>
+#include <algorithm>
 
 using namespace std;
 
